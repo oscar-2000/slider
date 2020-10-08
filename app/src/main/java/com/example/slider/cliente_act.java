@@ -40,18 +40,21 @@ public class cliente_act extends AppCompatActivity {
 
     public void Calcular(View view)
     {
+        int monto = Integer.parseInt(edText.getText().toString());
         //OBTENEMOS OBJETO SELECCIONADO Y LO CONVERTIMOS A STRING
         String cliente = spn1.getSelectedItem().toString();
         String planes = spn2.getSelectedItem().toString();
         Planes plan = new Planes();
+        plan.setXtreme(80000);
+        int resultXtreme = monto-plan.getXtreme();
 
         if(cliente.equals("Roberto") && planes.equals("xtreme") || cliente.equals("Ivan") && planes.equals("xtreme")){
             //MOSTRAR PRECIO DEL PLAN
-            textView.setText("El precio es: "+plan.getXtreme());
+            textView.setText("El precio es: "+resultXtreme);
         }
         if(cliente.equals("Roberto") && planes.equals("mindfullness") || cliente.equals("Ivan") && planes.equals("mindfullness")){
             //MOSTRAR PRECIO DEL PLAN
-            textView.setText("El precio es: "+plan.getMindfullness());
+            textView.setText("El precio es: "+resultXtreme);
         }
     }
 }
