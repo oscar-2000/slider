@@ -23,4 +23,8 @@ public class Planes {
     {
         return mindfullness;
     }
+
+    public void setXtreme(int xtreme){
+        this.xtreme = xtreme;
+    }
 }
