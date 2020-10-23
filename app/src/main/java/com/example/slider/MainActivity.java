@@ -65,4 +65,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(vistaMapa);
     }
 
+    public void Insumos (View view)
+    {
+        Intent vistaInsumo = new Intent(this, insumos_act.class);
+        startActivity(vistaInsumo);
+    }
+
+    public void Informacion(View view)
+    {
+        Intent vistaInfo = new Intent(this, info_act.class);
+        startActivity(vistaInfo);
+    }
+
 }

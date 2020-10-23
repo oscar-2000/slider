@@ -51,10 +51,23 @@
                     app:layout_constraintVertical_bias="1.0"
                     app:srcCompat="@drawable/perfil_men" />
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cliente"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtn1"
+                    app:layout_constraintHorizontal_bias="0.54"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.89" />
+
                 <ImageButton
                     android:id="@+id/imgBtn2"
                     android:layout_width="177dp"
                     android:layout_height="92dp"
+                    android:onClick="Insumos"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -62,6 +75,18 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/bd_men" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base de datos"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtn2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toEndOf="@+id/imgBtn1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.904" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -87,10 +112,23 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/maps_men" />
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapa"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtn3"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtn3"
+                    app:layout_constraintHorizontal_bias="0.54"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.893" />
+
                 <ImageButton
                     android:id="@+id/imgBtn4"
                     android:layout_width="176dp"
                     android:layout_height="82dp"
+                    android:onClick="Informacion"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -98,6 +136,18 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0"
                     app:srcCompat="@drawable/info_men" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informacion"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBtn4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtn4"
+                    app:layout_constraintTop_toTopOf="@+id/imgBtn4"
+                    app:layout_constraintVertical_bias="0.873" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </TableRow>
 
